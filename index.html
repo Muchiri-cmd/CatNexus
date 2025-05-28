@@ -8,7 +8,41 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <h1>The Cat App</h1>
-    <script type="module" src="/src/main.js"></script>
+    <div class="container">
+      <div class="top-bar">
+        <h1>The Cats App</h1>
+        <div class="search-divs-containers">
+          <form class="cat-facts">
+            <p>Number of Cats Facts (50 Maximum)</p>
+            <input
+              type="number"
+              id="cat-facts-number"
+              min="1"
+              max="50"
+              placeholder="number of cat facts(50max)"
+              required
+            />
+            <button id="get-cat-facts">Submit</button>
+          </form>
+          <form class="cat-photos">
+            <p>Number of Cat Photos (10 Maximum)</p>
+            <input
+              type="number"
+              id="cat-photos-number"
+              min="1"
+              max="10"
+              placeholder="number of cat photos (10max)"
+              required
+            />
+            <button id="get-cat-photos">Submit</button>
+          </form>
+        </div>
+      </div>
+       
+      <div class="spinner" id="spinner"></div>
+      <div class="results-div" id="results-div">
+      </div>
+    </div>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
