@@ -12,7 +12,7 @@
       <div class="top-bar">
         <h1>The Cats App</h1>
         <div class="search-divs-containers">
-          <form class="cat-facts">
+          <div class="cat-facts">
             <p>Number of Cats Facts (50 Maximum)</p>
             <input
               type="number"
@@ -23,8 +23,8 @@
               required
             />
             <button id="get-cat-facts">Submit</button>
-          </form>
-          <form class="cat-photos">
+          </div>
+          <div class="cat-photos">
             <p>Number of Cat Photos (10 Maximum)</p>
             <input
               type="number"
@@ -35,14 +35,12 @@
               required
             />
             <button id="get-cat-photos">Submit</button>
-          </form>
+          </div>
         </div>
       </div>
-       
-      <div class="spinner" id="spinner"></div>
-      <div class="results-div" id="results-div">
-      </div>
     </div>
+    <div class="spinner" id="spinner"></div>
+    <div class="results-div" id="results-div"></div>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
