@@ -1,5 +1,5 @@
 console.log("Meoooow");
-import axios from "axios";
+// import axios from "axios";
 
 // Base URLs for the APIs
 let photosBaseURL = "https://api.thecatapi.com/v1/images/search?limit=";
